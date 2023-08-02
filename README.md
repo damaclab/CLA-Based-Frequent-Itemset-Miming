@@ -1,4 +1,4 @@
-# CLA-Based-Frequent-Itemset-Miming
+  # CLA-Based-Frequent-Itemset-Miming
 Implementation of CellFPM (Cellular learning automata based frequent itemset mining) for mining frequent itemsets in a set of transactions in a large dataset is given here.
 
 ## Implementation environment
