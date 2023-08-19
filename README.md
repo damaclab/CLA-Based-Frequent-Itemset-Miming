@@ -41,8 +41,11 @@ In order to successfully run the code, users need to have a JRE(Java Runtime Env
 The CellFPM code has been written in a modular fashion with each class in a different file. Every class is designed by keeping the concept of Single Responsibility Principle (SRP) is mind and hence each class deals with a single responsibility. The repository contains both the CellFPM code and datasets. The datasets are present in a directory named ```datasets``` from where they can be reffered. CellFPM can be used for mining frequent patterns in a transaction dataset by executing the following commands.
 
 For executing the class file, users nee to know the following terms:
+
 **Item Count:** The number of unique items in a dataset
+
 **Transaction Count:** The number of transactions in a dataset
+
 **Threshold:** The minimum number of occurence of a particular pattern for it to be included in the final output
 
 ### Compiling
