@@ -172,12 +172,26 @@ class Items{
 
 		System.out.println("\nFrequent item sets :");
 
-		for(int i=0;(i<n1) && (i<10);i++){
-			System.out.println(finalOutputSetA.get(i));
-		}
-		for(int i=0;i<(10-n1) && i<n2;i++){
-			System.out.println(finalOutputSetB.get(i));
-		}
+		try {
+      FileWriter fWriter = new FileWriter("output.txt");
+ 
+			for(int i=0;(i<n1) && (i<30);i++) {
+				fWriter.write(finalOutputSetA.get(i).toString());
+				fWriter.write("\n");
+				System.out.println(finalOutputSetA.get(i));
+			}
+						
+			for(int i=0;i<(30-n1) && i<n2;i++) {
+				fWriter.write(finalOutputSetA.get(i).toString());
+				fWriter.write("\n");
+				System.out.println(finalOutputSetB.get(i));
+			}
+            
+      fWriter.close();
+  	}
+  	catch (IOException e) {
+      System.out.print(e.getMessage());
+    }
 
 		// for(ArrayList<Integer> itemSet:outputSetItems){
 		// 	finalOutputSet.add(itemSet);
